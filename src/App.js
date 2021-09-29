@@ -124,7 +124,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1> game Recommendations </h1>
+      <h1> Game recommendation app </h1>
       <p style={{ fontSize: "smaller" }}>
         {" "}
         These are my recommendations of Games.{" "}
