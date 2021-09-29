@@ -142,9 +142,18 @@ export default function App() {
           {gameDb[selectedGame].map((game) => (
             <li className="game" key={game.name}>
               {" "}
-              <div style={{ fontSize: "larger" }}> {game.name} </div>
-              <div style={{ fontSize: "smaller" }}> {game.rating} </div>
-              <div style={{ fontSize: "smaller" }}> {game.overview} </div>
+              <div class="divz" style={{ fontSize: "larger" }}>
+                {" "}
+                {game.name}{" "}
+              </div>
+              <div class="divz" style={{ fontSize: "smaller" }}>
+                {" "}
+                {game.rating}{" "}
+              </div>
+              <div class="divz" style={{ fontSize: "smaller" }}>
+                {" "}
+                {game.overview}{" "}
+              </div>
             </li>
           ))}
         </ul>
