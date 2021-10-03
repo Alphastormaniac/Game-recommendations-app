@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./styles.css";
 
 const gameDb = {
-  ActionGames: [
+  Action: [
     {
       name: "God of War",
       rating: "9.6",
@@ -37,7 +37,7 @@ const gameDb = {
     }
   ],
 
-  AdventureGames: [
+  Adventure: [
     {
       name: "Grand Theft Auto V",
       rating: "9.5",
@@ -69,7 +69,7 @@ const gameDb = {
         "Amidst the decline of the Wild West at the turn of the 19th century, outlaw Arthur Morgan and his gang struggle to cope with the loss of their way of life."
     }
   ],
-  BattleRoyaleGames: [
+  BattleRoyale: [
     {
       name: " Apex Legends",
       rating: "7.3",
@@ -89,7 +89,7 @@ const gameDb = {
         "A Battle Royale begins when one hundred players parachute onto an island."
     }
   ],
-  RacingGames: [
+  Racing: [
     {
       name: " Project Cars ",
       rating: "6.8",
@@ -118,7 +118,7 @@ const gameDb = {
 };
 
 export default function App() {
-  const [selectedGame, setGame] = useState("ActionGames");
+  const [selectedGame, setGame] = useState("Action");
   function gameClickHandler(game) {
     setGame(game);
   }
@@ -127,7 +127,9 @@ export default function App() {
       <h1> Game recommendation app </h1>
       <p style={{ fontSize: "smaller" }}>
         {" "}
-        These are my recommendations of Games.{" "}
+        These are my recommendations of Games. 
+        Do select a Genre:
+        {" "}
       </p>
       <div>
         {Object.keys(gameDb).map((game) => (
